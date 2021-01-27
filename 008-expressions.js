@@ -8,6 +8,10 @@ console.log(number + 2)               //Soma de dois números
 console.log(++ number)                //Incremento: Acrescenta mais 1
 number = 1
 console.log(-- number)                //Decremento: Diminui 1
+
+number = 0
+console.log(number ++)                //Perceba que o valor continua 0, pois quando faz incremento ou decremento após o número, ele só soma depois desta linha:
+console.log(number)                   //Adicionou o 1 da linha anterior 
 //Ternary                  
 console.log(true ? 'Olá' : 'Nada')   //Só existe esta possibilidade
 
