@@ -5,7 +5,7 @@ let temperatura = 40
     if (temperatura >= 37) {
         console.log('Está com Febre!')
     }   */
-    
+
 
 //  MOSTRA CASO A CONDIÇÃO FOR VERDADEIRA OU NÃO
 /*  
