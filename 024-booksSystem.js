@@ -45,3 +45,13 @@ const booksByCategory = [
         ],
     },
 ]
+//  Contar a quantidade de categorias
+const totalCategories = booksByCategory.length
+console.log('Total de categorias: ' + totalCategories)
+
+// Contar o numero de livros em cada categoria
+for (let category of booksByCategory) {
+    console.log(`Total de livros na categoria "${category.category}": ${category.books.length}`)
+}
+
+// Mostrar o número de autores
