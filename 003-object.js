@@ -48,3 +48,21 @@ var cursos = [
 ]
 
 console.log(cursos[0].nível) //você poderá navegar pelo objeto!! Facilita MUITO manipulá-los
+
+
+//CLOSURES: Função dentro de função para dar maior contexto
+//mais informações disponíveis no mozilla.
+function fazerCalculo() {
+    var a = 5
+    var b = 4
+
+    function multiplicarTermos() {
+        var resultadoMultiplicação = a * b
+        return resultadoMultiplicação;
+    }
+    return multiplicarTermos;
+}
+
+        var resultado = fazerCalculo()
+
+        console.log("O resultado: ", resultado())
