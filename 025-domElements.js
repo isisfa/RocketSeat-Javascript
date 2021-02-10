@@ -1,7 +1,8 @@
+//Atenção: este arquivo não rodará no console
 /*Acicionando elementos à árvore DOM
 Ver mais em: http://developer.mozila.org/pt-BR/docs/Web/API/Element   */
 
-//São 5 os métodos para .classList
+//.classList    :Retorna um DOMTokenList contendo a lista de atributos da classe(array) Existem 5 métodos para classList (Somente leitura) 
 document.querySelector(".nomedaclasse").classList
 
 // add(String [, String]) Adiciona valores de classe especificados.
@@ -19,3 +20,27 @@ document.querySelector(".nomedaclasse").classList.toggle('nomeDoElementoQueDesej
 
 // contains( String) Verifica se o valor da classe especificado existe no atributo de classe do elemento. virá como true ou false
 document.querySelector(".nomedaclasse").classList.contains
+
+
+
+// element.attributes   :Retorna um NamedNodeMap, que lista todos os atributos associados ao elemento. Seguem os métodos:
+
+// element.hasAttribute(name)  Ve se o atributo específico está presente e retorna um booleano
+
+// .element.getAttribute(nomeDoAtributo)   Retorna o valor do atributo especificado
+
+// .element.setAttribute(nome, value)  Muda o valor do atributo especificado ou adiciona um novo atributo se não houver
+
+// .element.removeAttribute(nomeDoAtributo)  Remove o atributo
+
+const exemploDoUsoDeAttributes = document.querySelector(".classe a")
+//                                                  ^ elemento a da classe escolhida
+console.log(exemploDoUsoDeAttributes.attributes)
+
+if (exemploDoUsoDeAttributes.hasAttribute("target")) {
+    console.log(exemploDoUsoDeAttributes.getAttribute("target")) //Mostre a tag
+} else {
+    exemploDoUsoDeAttributes.setAttribute("target", "_blank")
+}
+
+console.log(exemploDoUsoDeAttributes.attributes)
