@@ -8,3 +8,15 @@ for (let i = 10; i > 0; i--) {
     }
 console.log(i)
 }
+
+
+//Utilizando o for para percorrer o html buscando lnks que nao possuam determinado atributo e inclui-lo
+
+var lookForLinks = document.querySelectorAll("a[href^=http")
+console.log (lookForLinks)
+
+for (var i = 0 ; i < lookForLinks.length; i++) { 
+    if (!lookForLinks[i].hasAttribute("target")) {
+        lookForLinks[i].setAttribute("target", "_blank")
+    }
+}
