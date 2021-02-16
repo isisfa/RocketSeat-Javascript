@@ -56,12 +56,12 @@ function start(){
 // Função de recomeçar:
 function reset() {
     clearInterval(interval);
-    interval = null;
-    timer = [0,0,0,0];
+    interval = null;            
+    timer = [0,0,0,0];                  //Ajustar o relógio de volta a zero (backend)
     timerRunning = false;
 
     testArea.value = "";
-    theTimer.innerHTML = "00:00:00";
+    theTimer.innerHTML = "00:00:00";    //Ajustar o relógio de volta a zero (frontend)
     testWrapper.style.borderColor = "grey";
 }
 
