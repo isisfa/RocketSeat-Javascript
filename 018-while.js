@@ -17,3 +17,14 @@ while (d >= 1) {
 
     d /= 3       //Divisões por 51 até ser menor que 1
 }
+
+//Para que rode ao menos uma vez mesmo que a condição while nao seja atendida utilizamos o do...while
+
+var r = 567 
+var reps = 0 
+
+do {
+    ++ reps
+    console.log(reps + "repetições")
+    r *= 2.1
+} while (r < 567);
